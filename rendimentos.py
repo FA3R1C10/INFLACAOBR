@@ -48,4 +48,5 @@ plt.annotate("Dilma", xy=(0.09, 0.12), xycoords="figure fraction", fontsize=10, 
 plt.annotate("Temer", xy=(0.21, 0.12), xycoords="figure fraction", fontsize=10, color="black")
 plt.annotate("Bolsonaro", xy=(0.42, 0.12), xycoords="figure fraction", fontsize=10, color="black")
 plt.annotate("Lula", xy=(0.7, 0.12), xycoords="figure fraction", fontsize=10, color="black")
+plt.show()
 # %%
