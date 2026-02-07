@@ -11,6 +11,7 @@ PIB_df.columns = ['PIB']
 pib_ciclo, pib_tendencia = hpfilter(PIB_df['PIB'], lamb=129600)
 hiato = pib_ciclo / pib_tendencia * 100
 PIB_df['Hiato'] = hiato
+print(PIB_df)
 # %%
 plt.figure(figsize=(18,12))
 plt.plot(PIB_df['Hiato'], label= 'Hiato do Produto', color='blue')
