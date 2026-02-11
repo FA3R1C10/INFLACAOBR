@@ -33,8 +33,8 @@ plt.plot(dataframe["FIPEZAP Defl Acum"], label=f"FIPEZAP: {dataframe["FIPEZAP De
 plt.plot(dataframe["CAGR (%) a.a."], label=f"Resultado: IPCA + {dataframe['CAGR (%) a.a.'].iloc[-1]:.2f}% a.a.", color="gray")
 plt.legend(loc="best")
 plt.title(f"Índice FIPEZAP Deflacionado desde {pd.to_datetime(dataframe.index[0]).strftime("%m-%Y")}", loc="left")
-plt.annotate("fonte: IPEA", xy=(0.07,0.02), xycoords="figure fraction", va="bottom", ha="left", fontsize=10, color="black")
-plt.annotate("elaboração: Fabricio Orlandin, CFP®", xy=(0.8,0.02), xycoords="figure fraction", va="bottom", ha="right", fontsize=10, color="black")
+plt.annotate("fonte: IPEA", xy=(0.12,0.02), xycoords="figure fraction", va="bottom", ha="left", fontsize=10, color="black")
+plt.annotate("elaboração: Fabricio Orlandin, CFP®", xy=(0.9,0.02), xycoords="figure fraction", va="bottom", ha="right", fontsize=10, color="black")
 plt.grid(axis="y")
 plt.ylabel("Valorização Real (%)")
 plt.annotate(f"Máx:({x_max.strftime("%m-%Y")}) - IPCA + {y_max:.2f}% a.a.",
